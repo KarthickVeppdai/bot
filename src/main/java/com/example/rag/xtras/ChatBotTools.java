@@ -1,4 +1,4 @@
-package com.example.rag;
+package com.example.rag.xtras;
 
 
 import dev.langchain4j.agent.tool.Tool;

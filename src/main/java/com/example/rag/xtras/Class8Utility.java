@@ -1,5 +1,6 @@
-package com.example.rag;
+package com.example.rag.xtras;
 
+import com.example.rag.RagApplication;
 import dev.langchain4j.chain.ConversationalRetrievalChain;
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.DocumentSplitter;

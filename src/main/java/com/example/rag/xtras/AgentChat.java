@@ -1,7 +1,6 @@
-package com.example.rag;
+package com.example.rag.xtras;
 
 import dev.langchain4j.service.SystemMessage;
-import dev.langchain4j.service.TokenStream;
 
 
 public interface AgentChat {

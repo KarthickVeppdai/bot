@@ -1,4 +1,4 @@
-package com.example.rag.service;
+package com.example.rag.chat_controller;
 
 
 import com.example.rag.models.CustomMessage;

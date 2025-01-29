@@ -1,4 +1,4 @@
-package com.example.rag;
+package com.example.rag.chat_controller;
 
 
 import lombok.*;

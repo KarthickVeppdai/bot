@@ -1,5 +1,6 @@
-package com.example.rag;
+package com.example.rag.xtras;
 
+import com.example.rag.RagApplication;
 import dev.langchain4j.chain.ConversationalRetrievalChain;
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.DocumentSplitter;
@@ -19,7 +20,6 @@ import dev.langchain4j.retriever.EmbeddingStoreRetriever;
 import dev.langchain4j.store.embedding.EmbeddingMatch;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
 import dev.langchain4j.store.embedding.pgvector.PgVectorEmbeddingStore;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.net.URISyntaxException;
