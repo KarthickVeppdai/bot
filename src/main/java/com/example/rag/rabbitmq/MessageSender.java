@@ -13,8 +13,14 @@ public class MessageSender {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    public void sendMessage(String orderId) {
-        rabbitTemplate.convertAndSend(RabbitMqConfiguration.GPS_DATA_EXCHANGE,RabbitMqConfiguration.ROUTING_KEY_GPS, orderId);
+    public void putToInputQueue(String orderId) {
+        rabbitTemplate.convertAndSend(RabbitMqConfiguration.CHAT_DATA_EXCHANGE,RabbitMqConfiguration.ROUTING_KEY_CHAT, orderId);
+        System.out.println("Sent message: " + orderId);
+    }
+
+
+    public void putToSendQueue(String orderId) {
+        rabbitTemplate.convertAndSend(RabbitMqConfiguration.CHAT_DATA_EXCHANGE,RabbitMqConfiguration.ROUTING_KEY_CHAT, orderId);
         System.out.println("Sent message: " + orderId);
     }
 

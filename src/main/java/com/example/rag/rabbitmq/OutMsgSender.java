@@ -6,12 +6,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "gps-queue")
-public class MessageReceiver {
-
-    public static final String QUEUE_NAME = "gps-queue";
-    public static final String GPS_DATA_EXCHANGE = "gps-data-exchange";
-
+@RabbitListener(queues = "send-queue")
+public class OutMsgSender {
 
 
     @RabbitHandler
@@ -19,4 +15,3 @@ public class MessageReceiver {
         System.out.println("Received message: " + message);
     }
 }
-
